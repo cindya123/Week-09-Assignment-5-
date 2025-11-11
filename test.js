@@ -2,7 +2,7 @@ const { validateEmail, validatePassword } = require('./main');
 
 // describe("validateEmail()", () => {
 
-  
+//   // ✅ Valid tests
 //   test("valid email – normal", () => {
 //     expect(validateEmail("user@example.com")).toBe(true);
 //   });
@@ -11,7 +11,7 @@ const { validateEmail, validatePassword } = require('./main');
 //     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
 //   });
 
-  
+//   // ❌ Invalid tests
 //   test("invalid – missing @", () => {
 //     expect(validateEmail("invalidemail.com")).toBe(false);
 //   });
@@ -21,9 +21,9 @@ const { validateEmail, validatePassword } = require('./main');
 //   });
 // });
 
-// describe("validatePassword()", () => {
+describe("validatePassword()", () => {
 
-  
+  // ✅ Valid tests
   test("valid password – uppercase + number", () => {
     expect(validatePassword("StrongPass1")).toBe(true);
   });
@@ -32,7 +32,7 @@ const { validateEmail, validatePassword } = require('./main');
 //     expect(validatePassword("HelloWorld2025")).toBe(true);
 //   });
 
- 
+//   // ❌ Invalid tests
 //   test("invalid – too short", () => {
 //     expect(validatePassword("Abc12")).toBe(false);
 //   });
@@ -45,6 +45,6 @@ const { validateEmail, validatePassword } = require('./main');
 
 // describe("Intentional Break Test", () => {
 //   test("this should fail intentionally", () => {
-//     expect(1 + 1).toBe(3); 
+//     expect(1 + 1).toBe(3); // wrong on purpose
 //   });
 });
