@@ -1,0 +1,11 @@
+{
+    "name": "auth-validator",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+        "test": "jest --runInBand"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}
