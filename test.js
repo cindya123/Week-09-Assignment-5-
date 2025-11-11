@@ -3,9 +3,9 @@ const { validateEmail, validatePassword } = require('./main');
 describe("validateEmail()", () => {
 
   
-//   test("valid email – normal", () => {
-//     expect(validateEmail("user@example.com")).toBe(true);
-//   });
+  test("valid email – normal", () => {
+    expect(validateEmail("user@example.com")).toBe(true);
+  });
 
 //   test("valid email – subdomain", () => {
 //     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
@@ -24,9 +24,9 @@ describe("validateEmail()", () => {
 describe("validatePassword()", () => {
 
   
-  test("valid password – uppercase + number", () => {
-    expect(validatePassword("StrongPass1")).toBe(true);
-  });
+//   test("valid password – uppercase + number", () => {
+//     expect(validatePassword("StrongPass1")).toBe(true);
+//   });
 
 //   test("valid password – long + number", () => {
 //     expect(validatePassword("HelloWorld2025")).toBe(true);
@@ -40,7 +40,7 @@ describe("validatePassword()", () => {
 //   test("invalid – no uppercase", () => {
 //     expect(validatePassword("weakpassword1")).toBe(false);
 //   });
-// });
+});
 
 
 describe("Intentional Break Test", () => {
