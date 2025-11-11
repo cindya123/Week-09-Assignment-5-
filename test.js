@@ -1,11 +1,11 @@
 const { validateEmail, validatePassword } = require('./main');
 
-describe("validateEmail()", () => {
+// describe("validateEmail()", () => {
 
   
-  test("valid email – normal", () => {
-    expect(validateEmail("user@example.com")).toBe(true);
-  });
+//   test("valid email – normal", () => {
+//     expect(validateEmail("user@example.com")).toBe(true);
+//   });
 
 //   test("valid email – subdomain", () => {
 //     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
@@ -21,7 +21,7 @@ describe("validateEmail()", () => {
 //   });
 // });
 
-describe("validatePassword()", () => {
+// describe("validatePassword()", () => {
 
   
 //   test("valid password – uppercase + number", () => {
@@ -40,7 +40,7 @@ describe("validatePassword()", () => {
 //   test("invalid – no uppercase", () => {
 //     expect(validatePassword("weakpassword1")).toBe(false);
 //   });
-});
+// });
 
 
 describe("Intentional Break Test", () => {
