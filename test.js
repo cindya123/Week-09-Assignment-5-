@@ -1,6 +1,6 @@
 const { validateEmail, validatePassword } = require('./main');
 
-// describe("validateEmail()", () => {
+describe("validateEmail()", () => {
 
 //   // ✅ Valid tests
 //   test("valid email – normal", () => {
