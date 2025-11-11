@@ -11,22 +11,22 @@ const { validateEmail, validatePassword } = require('./main');
 //     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
 //   });
 
-//   // ❌ Invalid tests
-//   test("invalid – missing @", () => {
-//     expect(validateEmail("invalidemail.com")).toBe(false);
-//   });
+  // ❌ Invalid tests
+  test("invalid – missing @", () => {
+    expect(validateEmail("invalidemail.com")).toBe(false);
+  });
 
 //   test("invalid – missing TLD", () => {
 //     expect(validateEmail("user@domain")).toBe(false);
 //   });
 // });
 
-describe("validatePassword()", () => {
+// describe("validatePassword()", () => {
 
-  // ✅ Valid tests
-  test("valid password – uppercase + number", () => {
-    expect(validatePassword("StrongPass1")).toBe(true);
-  });
+//   // ✅ Valid tests
+//   test("valid password – uppercase + number", () => {
+//     expect(validatePassword("StrongPass1")).toBe(true);
+//   });
 
 //   test("valid password – long + number", () => {
 //     expect(validatePassword("HelloWorld2025")).toBe(true);
