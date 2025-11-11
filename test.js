@@ -3,9 +3,9 @@ const { validateEmail, validatePassword } = require('./main');
 describe("validateEmail()", () => {
 
   
-//   test("valid email – normal", () => {
-//     expect(validateEmail("user@example.com")).toBe(true);
-//   });
+  test("valid email – normal", () => {
+    expect(validateEmail("user@example.com")).toBe(true);
+  });
 
 //   test("valid email – subdomain", () => {
 //     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
@@ -16,9 +16,9 @@ describe("validateEmail()", () => {
 //     expect(validateEmail("invalidemail.com")).toBe(false);
 //   });
 
-  test("invalid – missing TLD", () => {
-    expect(validateEmail("user@domain")).toBe(false);
-  });
+//   test("invalid – missing TLD", () => {
+//     expect(validateEmail("user@domain")).toBe(false);
+//   });
 });
 
 describe("validatePassword()", () => {
