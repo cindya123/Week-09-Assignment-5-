@@ -23,4 +23,4 @@ test("valid email format", () => {
 // // 💥 Intentional break (forces overall failure)
 // test("intentional fail", () => {
 //   expect(2 + 2).toBe(5); // wrong on purpose
-});
+// });
