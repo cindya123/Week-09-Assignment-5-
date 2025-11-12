@@ -15,12 +15,12 @@ const { validateEmail, validatePassword } = require("./main");
 //   expect(validateEmail("invalidemail.com")).toBe(false);
 // });
 
-// // ❌ Invalid #2 (should PASS by returning false)
-// test("invalid password missing uppercase", () => {
-//   expect(validatePassword("weakpassword1")).toBe(false);
-// });
-
-// 💥 Intentional break (forces overall failure)
-test("intentional fail", () => {
-  expect(2 + 2).toBe(5); // wrong on purpose
+// ❌ Invalid #2 (should PASS by returning false)
+test("invalid password missing uppercase", () => {
+  expect(validatePassword("weakpassword1")).toBe(false);
 });
+
+// // 💥 Intentional break (forces overall failure)
+// test("intentional fail", () => {
+//   expect(2 + 2).toBe(5); // wrong on purpose
+// });
