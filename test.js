@@ -1,50 +1,26 @@
-const { validateEmail, validatePassword } = require('./main');
+const { validateEmail, validatePassword } = require("./main");
 
-// describe("validateEmail()", () => {
+// ✅ Valid #1
+test("valid email format", () => {
+  expect(validateEmail("user@example.com")).toBe(true);
+});
 
-//   // ✅ Valid tests
-//   test("valid email – normal", () => {
-//     expect(validateEmail("user@example.com")).toBe(true);
-//   });
-
-//   test("valid email – subdomain", () => {
-//     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
-//   });
-
-//   // ❌ Invalid tests
-//   test("invalid – missing @", () => {
-//     expect(validateEmail("invalidemail.com")).toBe(false);
-//   });
-
-//   test("invalid – missing TLD", () => {
-//     expect(validateEmail("user@domain")).toBe(false);
-//   });
+// // ✅ Valid #2
+// test("valid password format", () => {
+//   expect(validatePassword("StrongPass1")).toBe(true);
 // });
 
-describe("validatePassword()", () => {
-
-//   // ✅ Valid tests
-//   test("valid password – uppercase + number", () => {
-//     expect(validatePassword("StrongPass1")).toBe(true);
-//   });
-
-//   test("valid password – long + number", () => {
-//     expect(validatePassword("HelloWorld2025")).toBe(true);
-//   });
-
-  // ❌ Invalid tests
-  test("invalid – too short", () => {
-    expect(validatePassword("Abc12")).toBe(false);
-  });
-
-//   test("invalid – no uppercase", () => {
-//     expect(validatePassword("weakpassword1")).toBe(false);
-//   });
+// // ❌ Invalid #1 (should PASS by returning false)
+// test("invalid email missing @", () => {
+//   expect(validateEmail("invalidemail.com")).toBe(false);
 // });
 
+// // ❌ Invalid #2 (should PASS by returning false)
+// test("invalid password missing uppercase", () => {
+//   expect(validatePassword("weakpassword1")).toBe(false);
+// });
 
-// describe("Intentional Break Test", () => {
-//   test("this should fail intentionally", () => {
-//     expect(1 + 1).toBe(3); // wrong on purpose
-//   });
+// // 💥 Intentional break (forces overall failure)
+// test("intentional fail", () => {
+//   expect(2 + 2).toBe(5); // wrong on purpose
 });
