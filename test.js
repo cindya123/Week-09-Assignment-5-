@@ -11,10 +11,10 @@ const { validateEmail, validatePassword } = require('./main');
 //     expect(validateEmail("john.doe@sub.domain.co")).toBe(true);
 //   });
 
-  // ❌ Invalid tests
-  test("invalid – missing @", () => {
-    expect(validateEmail("invalidemail.com")).toBe(false);
-  });
+//   // ❌ Invalid tests
+//   test("invalid – missing @", () => {
+//     expect(validateEmail("invalidemail.com")).toBe(false);
+//   });
 
 //   test("invalid – missing TLD", () => {
 //     expect(validateEmail("user@domain")).toBe(false);
@@ -32,10 +32,10 @@ describe("validatePassword()", () => {
 //     expect(validatePassword("HelloWorld2025")).toBe(true);
 //   });
 
-//   // ❌ Invalid tests
-//   test("invalid – too short", () => {
-//     expect(validatePassword("Abc12")).toBe(false);
-//   });
+  // ❌ Invalid tests
+  test("invalid – too short", () => {
+    expect(validatePassword("Abc12")).toBe(false);
+  });
 
 //   test("invalid – no uppercase", () => {
 //     expect(validatePassword("weakpassword1")).toBe(false);
